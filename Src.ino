@@ -290,7 +290,6 @@ void debugFuzzyRules() {
 void lcdFirstLine(float temperatureC, float AmmoniaValue){
   lcd.setCursor(0, 0);
   lcd.print(F("T:"));
-  lcd.setCursor(2, 0);
   lcd.print(int(floor(temperatureC)));
   lcd.print(F("C"));
   if (String(int(floor(temperatureC))).length() == 2){
